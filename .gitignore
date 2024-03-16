@@ -1,3 +1,5 @@
-apibara-server/node_modules
+apibara-server/node_modules/
+madara-appchain/madara/target/
+madara-appchain/deploy_scripts/node_modules/
 .env
 .DS_Store
