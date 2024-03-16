@@ -1,49 +1,13 @@
-# ArbSim
+# ArbSim / SimFi / SiMEV
 
+A simulated DeFi trading arena with enhanced with ZKML technology
 
-## **Project Notes:**
+Our aim is to bridge the gap between traditional finance and DeFi by providing a realistic, engaging, and secure platform for trading simulation. As the DeFi landscape evolves, so too will our platform, with regular updates to the ZKML technology, market conditions, and trading scenarios to ensure an up-to-date and challenging environment for our users.
 
-- **Objective:** To deploy and test smart contracts and tokens on Starknet and Madera, with a focus on data visualization for trades and wallet activities.
-- **Platforms:** Starknet, Madera, Sepolia Network (back-up)
+- ZKML: At the heart of our platform is ZKML, which will leverage Zero-Knowledge proofs to ensure user strategies and data remain private and secure while engaging in competitive trading.
 
-### **Plan A: Deployment on Madera**
+- Simulated DeFi Market: DeFi trading with real-time market simulations that mirror current DeFi ecosystems. Users can experiment with various strategies without risking actual capital.
 
-1. **Initial Setup:**
-    - Use Madara node (already deployed a smart contract to a local node).
-2. **Deployment Tasks:**
-    - Deploy tokens (note potential compatibility issues).
-    - Deploy contracts.
+- Competitive Leaderboards and Tournaments: Engage in head-to-head battles or participate in large-scale tournaments against other users and their bots. Showcase your trading abilities and climb the ranks to earn rewards and recognition within the community.
 
-### **Plan B: Deployment on Sepolia Network**
-
-1. **Deployment Tasks:**
-    - Deploy tokens.
-    - Deploy contracts.
-
-**Activity Scripts:**
- Create scripts using [starknet.js](https://www.starknetjs.com) to simulate activity:
-	- Direct contract calls as RPC calls.
-	- Transaction creation, etc.
-
-2.  **Requirements:**
-    - A wallet preloaded with all necessary tokens for spending and swapping.
-    - Visualization tools for tracking and displaying data.
-
-### **Data Visualization**
-Provide feedback to participants as to what is happening on the network and i
-1. **Core:**
-    - Visualize balance in wallets.
-    - Visualize trades per wallet.
-2. **Tools and Resources:**
-    - [Apibara](https://www.apibara.com/) (look at first)
-    - [Checkpoint](https://checkpoint.fyi/#/)
-    - [Tokenflow](https://tokenflow.live/)
-3. **Visualization Ideas:**
-    - Track and display when trades fail due to slippage and price changes.
-    - Show sequence of events for each trade, including swap time, price, and wallet.
-    - Keep track of prices across exchanges, especially after successful swaps.
-    - Organize a competition front end to engage users with bots, tracking their token count by the end.
-4. **Other ideas:**
-    - Use ZKML to verify bots during the competition.
-    - Develop a ZKML bot for user competition.
-
+- Privacy and Security: Leveraging Zero-Knowledge proofs not only enhances the capabilities of our platform but also ensures that all user activities on the platform are completely private and secure. Users can trade with confidence, knowing their strategies and finances are protected.
