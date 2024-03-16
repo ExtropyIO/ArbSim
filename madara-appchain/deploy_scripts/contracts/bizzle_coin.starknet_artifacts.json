@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"naug8kohhs00a","package_name":"bizzle_coin","contract_name":"MyToken","module_path":"bizzle_coin::MyToken","artifacts":{"sierra":"bizzle_coin_MyToken.contract_class.json","casm":"bizzle_coin_MyToken.compiled_contract_class.json"}}]}

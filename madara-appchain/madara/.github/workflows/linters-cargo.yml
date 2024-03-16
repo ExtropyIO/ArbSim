@@ -1,0 +1,25 @@
+---
+name: Task - Linters Cargo
+
+on:
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  # FIXME: check why this is rebuilding the project every time
+  cargo-lint:
+    runs-on: ubuntu-latest-32-cores
+    steps:
+      - uses: actions/checkout@v3
+      - uses: Swatinem/rust-cache@v2
+        with:
+          shared-key: "cache"
+          save-if: false
+      - name: Setup build deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clang llvm libudev-dev protobuf-compiler
+      - name: Format and clippy
+        run: |
+          cargo fmt -- --check
+          cargo clippy --workspace --tests --no-deps -- -D warnings
