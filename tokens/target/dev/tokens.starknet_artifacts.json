@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"m3sl8j6qnb6n8","package_name":"tokens","contract_name":"ArbToken","module_path":"tokens::ArbToken","artifacts":{"sierra":"tokens_ArbToken.contract_class.json","casm":"tokens_ArbToken.compiled_contract_class.json"}}]}
