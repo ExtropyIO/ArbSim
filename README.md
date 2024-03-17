@@ -3,7 +3,7 @@
 
 
 
-A simulated DeFi trading arena with enhanced with ZKML technology
+A simulated DeFi trading arena enhanced with ZKML technology
 
 Our aim is to bridge the gap between traditional finance and DeFi by providing a realistic, engaging, and secure platform for trading simulation. As the DeFi landscape evolves, so too will our platform, with regular updates to the ZKML technology, market conditions, and trading scenarios to ensure an up-to-date and challenging environment for our users.
 
