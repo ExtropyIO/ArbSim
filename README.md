@@ -1,5 +1,6 @@
 # ZKSim
-![simfi](https://github.com/ExtropyIO/ArbSim/assets/62178867/77223651-830d-4393-83cd-de9359855055)
+![zksim](https://github.com/ExtropyIO/ArbSim/assets/62178867/616fbe75-23ea-4713-9e6b-3079590bd1fc)
+
 
 
 A simulated DeFi trading arena with enhanced with ZKML technology
