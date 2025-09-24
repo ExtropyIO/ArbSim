@@ -59,7 +59,7 @@ async function main() {
     });
 
     const provider = new RpcProvider({
-      nodeUrl: constants.NetworkName.SN_MAIN,
+      nodeUrl: "https://starknet-mainnet.public.blastapi.io",
       chainId: constants.StarknetChainId.SN_MAIN,
     });
     const hashAndBlockNumber = await provider.getBlockLatestAccepted();
