@@ -1,0 +1,78 @@
+[package]
+name = "sneak-simulation"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "DeFi simulation framework for testing arbitrage bots and running competitive arenas"
+
+[dependencies]
+# Internal crates
+sneak-core = { path = "../core" }
+sneak-blockchain = { path = "../blockchain" }
+
+# Async runtime
+tokio = { workspace = true }
+async-trait = { workspace = true }
+futures = { workspace = true }
+
+# Blockchain - Alloy stack
+alloy = { workspace = true }
+alloy-primitives = { workspace = true }
+alloy-provider = { workspace = true }
+alloy-contract = { workspace = true }
+alloy-rpc-types = { workspace = true }
+alloy-network = { workspace = true }
+alloy-transport = { workspace = true }
+alloy-sol-types = { workspace = true }
+
+# Decimal arithmetic
+rust_decimal = { workspace = true }
+rust_decimal_macros = { workspace = true }
+
+# Serialization
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+# Error handling
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+
+# Logging
+tracing = { workspace = true }
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# UUID
+uuid = { workspace = true }
+
+# Time
+chrono = { workspace = true }
+
+# Utilities
+dashmap = { workspace = true }
+rand = "0.8"
+parking_lot = "0.12"
+
+# HTTP client (for RPC health checks)
+reqwest = { version = "0.12", features = ["json"] }
+
+# gRPC (for bot interface)
+tonic = "0.12"
+prost = "0.13"
+
+[build-dependencies]
+tonic-build = "0.12"
+
+[dev-dependencies]
+tokio-test = "0.4"
+sneak-database = { path = "../database" }
+testcontainers = "0.23"
+testcontainers-modules = { version = "0.11", features = ["postgres"] }
+
+[[example]]
+name = "run_simulation"
+path = "examples/run_simulation.rs"
+
+[[example]]
+name = "simple_simulation"
+path = "examples/simple_simulation.rs"
